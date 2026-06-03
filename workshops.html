@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshops — Why This Keeps Happening | Mark & Lynetta</title>
+<meta name="description" content="Mark and Lynetta bring immersive, experiential trauma healing workshops to retreat centers, spiritual communities, recovery programs, and beyond. Learn about formats, the facilitation method, and how to host.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://whythiskeepshappening.com/workshops">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://whythiskeepshappening.com/workshops">
+<meta property="og:title" content="Workshops — Why This Keeps Happening">
+<meta property="og:description" content="Mark and Lynetta bring immersive, experiential trauma healing workshops to retreat centers, spiritual communities, recovery programs, and beyond.">
+<meta property="og:image" content="https://whythiskeepshappening.com/hero.jpg">
+
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #0B1640;
+    --navy-mid: #142054;
+    --royal: #1A4BC4;
+    --royal-light: #2E63E8;
+    --cream: #F6F1E7;
+    --cream-dark: #EDE6D6;
+    --gold: #B8924A;
+    --gold-light: #D4AA6A;
+    --white: #FFFFFF;
+    --text-dark: #1A1A2E;
+    --text-mid: #3D3D5C;
+    --text-light: #8888AA;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: var(--text-dark);
+    background: var(--cream);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background: rgba(11, 22, 64, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,146,74,0.2);
+  }
+
+  .nav-brand {
+    font-family: 'Lora', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--cream);
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(246,241,231,0.75);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active { color: var(--gold-light); }
+
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--cream);
+    transition: all 0.3s ease;
+  }
+
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .nav-mobile {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--navy);
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .nav-mobile.open { display: flex; }
+
+  .nav-mobile a {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--cream);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+  }
+
+  .nav-mobile a:hover { color: var(--gold-light); }
+
+  .nav-mobile-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--cream);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  /* ── SHARED ── */
+  section { position: relative; }
+
+  .section-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 6rem 3rem;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+
+  .section-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(2.2rem, 4vw, 3.6rem);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title em { font-style: italic; }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 0.9rem 2.2rem;
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 0.9rem 2.2rem;
+    background: transparent;
+    color: var(--cream);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(246,241,231,0.4);
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+  }
+
+  .btn-secondary:hover { border-color: var(--gold-light); color: var(--gold-light); }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── PAGE HERO ── */
+  .page-hero {
+    min-height: 75vh;
+    background: var(--navy);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 65% 50%, rgba(26,75,196,0.28) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .page-hero-text {
+    padding: 8rem 4rem 6rem 6rem;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeUp 1s ease 0.2s forwards;
+  }
+
+  .page-hero-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.8rem;
+  }
+
+  .page-hero-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(2.8rem, 4.5vw, 5rem);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--white);
+    margin-bottom: 2rem;
+  }
+
+  .page-hero-title em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .page-hero-sub {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: rgba(246,241,231,0.8);
+    max-width: 520px;
+    margin-bottom: 3rem;
+  }
+
+  .hero-btn-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .page-hero-photo {
+    position: relative;
+    height: 75vh;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeUp 1.2s ease 0.5s forwards;
+  }
+
+  .page-hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: brightness(0.85) saturate(0.9);
+  }
+
+  .page-hero-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--navy) 0%, transparent 35%),
+                linear-gradient(to top, var(--navy) 0%, transparent 25%);
+  }
+
+  /* ── WHAT HAPPENS IN THE ROOM ── */
+  .room-section { background: var(--cream-dark); }
+
+  .room-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .room-body {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--text-mid);
+    margin-bottom: 1.2rem;
+  }
+
+  .room-body strong { color: var(--navy); font-weight: 600; }
+
+  .differentiators {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .diff-card {
+    background: var(--white);
+    border-left: 4px solid var(--gold);
+    padding: 1.6rem 1.8rem;
+  }
+
+  .diff-number {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .diff-title {
+    font-family: 'Lora', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .diff-desc {
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--text-mid);
+  }
+
+  /* ── WORKSHOP ARC ── */
+  .arc-section { background: var(--navy); }
+
+  .arc-section .section-title { color: var(--white); }
+
+  .arc-intro {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: rgba(246,241,231,0.8);
+    max-width: 700px;
+    margin-bottom: 3.5rem;
+  }
+
+  .arc-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(184,146,74,0.15);
+    border: 1px solid rgba(184,146,74,0.15);
+    margin-bottom: 3rem;
+  }
+
+  .arc-step {
+    background: var(--navy-mid);
+    padding: 2rem 1.8rem;
+    transition: background 0.3s;
+  }
+
+  .arc-step:hover { background: rgba(26,75,196,0.25); }
+
+  .arc-step-num {
+    font-family: 'Lora', serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--gold);
+    opacity: 0.45;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .arc-step-title {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+  }
+
+  .arc-step-desc {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: rgba(246,241,231,0.65);
+  }
+
+  .arc-note {
+    background: rgba(184,146,74,0.1);
+    border: 1px solid rgba(184,146,74,0.2);
+    padding: 1.6rem 2rem;
+    max-width: 760px;
+  }
+
+  .arc-note-text {
+    font-size: 0.92rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: rgba(246,241,231,0.8);
+  }
+
+  .arc-note-text strong { color: var(--cream); font-weight: 600; }
+
+  /* ── NAMED WORKSHOPS ── */
+  .workshops-section { background: var(--navy-mid); }
+
+  .workshops-section .section-title { color: var(--white); }
+
+  .workshops-intro {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: rgba(246,241,231,0.8);
+    max-width: 680px;
+    margin-bottom: 3.5rem;
+  }
+
+  .workshop-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .workshop-card {
+    background: var(--navy);
+    border: 1px solid rgba(184,146,74,0.2);
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    overflow: hidden;
+    transition: border-color 0.3s;
+  }
+
+  .workshop-card:hover { border-color: rgba(184,146,74,0.5); }
+
+  .workshop-card-sidebar {
+    background: rgba(26,75,196,0.18);
+    border-right: 1px solid rgba(184,146,74,0.15);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .workshop-card-tag {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+
+  .workshop-card-duration {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 0.4rem;
+  }
+
+  .workshop-card-group {
+    font-size: 0.78rem;
+    font-weight: 300;
+    color: rgba(246,241,231,0.55);
+    letter-spacing: 0.05em;
+  }
+
+  .workshop-card-body {
+    padding: 2.5rem;
+  }
+
+  .workshop-card-title {
+    font-family: 'Lora', serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+
+  .workshop-card-subtitle {
+    font-size: 0.82rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 1.2rem;
+  }
+
+  .workshop-card-desc {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: rgba(246,241,231,0.8);
+    margin-bottom: 1.5rem;
+  }
+
+  .workshop-outcomes {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .workshop-outcomes li {
+    font-size: 0.84rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgba(246,241,231,0.72);
+    display: flex;
+    gap: 0.55rem;
+    align-items: flex-start;
+  }
+
+  .workshop-outcomes li::before {
+    content: '✦';
+    color: var(--gold);
+    flex-shrink: 0;
+    font-size: 0.65rem;
+    margin-top: 0.2rem;
+  }
+
+  /* ── POPULATIONS ── */
+  .populations-section { background: var(--cream-dark); }
+
+  .populations-section .section-title { color: var(--navy); }
+
+  .populations-intro {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--text-mid);
+    max-width: 680px;
+    margin-bottom: 3rem;
+  }
+
+  .populations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .population-card {
+    background: var(--white);
+    border-top: 4px solid var(--gold);
+    padding: 1.8rem;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+
+  .population-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(11,22,64,0.1);
+  }
+
+  .population-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+
+  .population-title {
+    font-family: 'Lora', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .population-note {
+    font-size: 0.84rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--text-mid);
+  }
+
+  /* ── FACILITATOR BIOS ── */
+  .bio-section { background: var(--navy); }
+
+  .bio-section .section-title { color: var(--white); }
+
+  .bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+
+  .bio-card {
+    background: var(--navy-mid);
+    border: 1px solid rgba(184,146,74,0.2);
+    overflow: hidden;
+  }
+
+  .bio-photo {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    filter: saturate(0.85);
+  }
+
+  .bio-content {
+    padding: 2rem;
+  }
+
+  .bio-name {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.2rem;
+  }
+
+  .bio-role {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+
+  .bio-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(246,241,231,0.78);
+    margin-bottom: 0.8rem;
+  }
+
+  /* ── TESTIMONIALS ── */
+  .workshop-proof-section { background: var(--cream); }
+
+  .workshop-proof-section .section-title { color: var(--navy); }
+
+  .workshop-testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .wt-card {
+    background: var(--white);
+    border-left: 4px solid var(--gold);
+    padding: 1.8rem 1.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .wt-card.wide {
+    grid-column: 1 / -1;
+    border-left-color: var(--royal);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .wt-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 65%;
+    display: block;
+    min-height: 220px;
+  }
+
+  .wt-card-inner {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wt-quote {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--text-dark);
+    flex-grow: 1;
+  }
+
+  .wt-attribution {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* ── LIVE WORKSHOP VIDEOS ── */
+  .videos-section { background: var(--navy-mid); }
+
+  .videos-section .section-title { color: var(--white); }
+
+  .videos-intro {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: rgba(246,241,231,0.8);
+    max-width: 680px;
+    margin-bottom: 2.5rem;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .video-card {
+    display: block;
+    text-decoration: none;
+    background: rgba(26,75,196,0.15);
+    border: 1px solid rgba(26,75,196,0.3);
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+
+  .video-card:hover {
+    border-color: var(--gold-light);
+    transform: translateY(-3px);
+  }
+
+  .video-card img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  .video-card-meta {
+    padding: 1.2rem 1.4rem 1.4rem;
+  }
+
+  .video-card-venue {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+
+  .video-card-title {
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+
+  .video-card-link {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--royal-light);
+  }
+
+  /* ── LOGISTICS / HOSTING ── */
+  .logistics-section { background: var(--cream-dark); }
+
+  .logistics-section .section-title { color: var(--navy); }
+
+  .logistics-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .logistics-body {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--text-mid);
+    margin-bottom: 1.2rem;
+  }
+
+  .logistics-body strong { color: var(--navy); font-weight: 600; }
+
+  .logistics-list {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
+  .logistics-list li {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(11,22,64,0.08);
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: var(--text-mid);
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    line-height: 1.6;
+  }
+
+  .logistics-list li::before {
+    content: '→';
+    color: var(--gold);
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .logistics-list li strong { color: var(--navy); font-weight: 600; }
+
+  .availability-box {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 2.5rem;
+    position: sticky;
+    top: 5rem;
+  }
+
+  .availability-title {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gold-light);
+    margin-bottom: 1.4rem;
+  }
+
+  .avail-item {
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(246,241,231,0.8);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(246,241,231,0.08);
+  }
+
+  .avail-item:last-child { border: none; padding-bottom: 0; }
+
+  .avail-item strong { color: var(--cream); font-weight: 600; }
+
+  /* ── CONTACT CTA ── */
+  .cta-section { background: var(--navy); }
+
+  .cta-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 6rem 3rem;
+    text-align: center;
+  }
+
+  .cta-inner .section-title { color: var(--white); margin-bottom: 1rem; }
+
+  .cta-body {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: rgba(246,241,231,0.8);
+    margin-bottom: 3rem;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-btn-group {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    color: rgba(246,241,231,0.45);
+    text-align: center;
+    padding: 2.5rem 3rem;
+    font-size: 0.78rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    border-top: 1px solid rgba(184,146,74,0.1);
+  }
+
+  footer a { color: rgba(184,146,74,0.7); text-decoration: none; }
+  footer a:hover { color: var(--gold-light); }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .page-hero { grid-template-columns: 1fr; }
+    .page-hero-photo { height: 60vw; min-height: 280px; }
+    .page-hero-photo img { object-position: center center; }
+    .page-hero-text { padding: 7rem 2rem 3rem; }
+    .section-inner { padding: 4rem 1.5rem; }
+    .room-grid, .logistics-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .arc-steps { grid-template-columns: repeat(2, 1fr); }
+    .workshop-card { grid-template-columns: 1fr; }
+    .workshop-card-sidebar { border-right: none; border-bottom: 1px solid rgba(184,146,74,0.15); padding: 1.5rem 2rem; flex-direction: row; align-items: center; gap: 2rem; }
+    .populations-grid { grid-template-columns: 1fr 1fr; }
+    .bio-grid { grid-template-columns: 1fr; }
+    .workshop-testimonials { grid-template-columns: 1fr; }
+    .wt-card.wide { grid-template-columns: 1fr; }
+    .wt-card-img { height: 220px; }
+    .video-grid { grid-template-columns: 1fr 1fr; }
+    .workshop-outcomes { grid-template-columns: 1fr; }
+    .availability-box { position: static; }
+  }
+
+  @media (max-width: 640px) {
+    .arc-steps { grid-template-columns: 1fr; }
+    .populations-grid { grid-template-columns: 1fr; }
+    .video-grid { grid-template-columns: 1fr; }
+    .hero-btn-group { flex-direction: column; }
+    .cta-btn-group { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">Why This Keeps Happening</a>
+  <ul class="nav-links">
+    <li><a href="index.html#understand">Start Here</a></li>
+    <li><a href="index.html#proof">Real Results</a></li>
+    <li><a href="index.html#work">How It Works</a></li>
+    <li><a href="index.html#coaching">Coaching</a></li>
+    <li><a href="workshops.html" class="active">Workshops</a></li>
+    <li><a href="index.html#sponsor">Sponsors</a></li>
+    <li><a href="index.html#connect">Connect</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="nav-mobile" id="mobileNav">
+  <button class="nav-mobile-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
+  <a href="index.html#understand">Start Here</a>
+  <a href="index.html#proof">Real Results</a>
+  <a href="index.html#work">How It Works</a>
+  <a href="index.html#coaching">Coaching</a>
+  <a href="workshops.html">Workshops</a>
+  <a href="index.html#sponsor">Sponsors</a>
+  <a href="index.html#connect">Connect</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-text">
+    <div class="page-hero-eyebrow">Live Experiential Workshops</div>
+    <h1 class="page-hero-title">
+      Something shifts<br>
+      <em>in the room.</em>
+    </h1>
+    <p class="page-hero-sub">
+      Most people talk about what keeps happening. In our workshops, they feel it move — and often leave saying things they have never been able to say in ordinary conversation.
+    </p>
+    <div class="hero-btn-group">
+      <a href="#workshops" class="btn-primary">See the Workshops</a>
+      <a href="#host" class="btn-secondary">Host or Partner With Us</a>
+    </div>
+  </div>
+  <div class="page-hero-photo">
+    <img src="hero.jpg" alt="Mark and Lynetta facilitating">
+  </div>
+</section>
+
+<!-- WHAT HAPPENS IN THE ROOM -->
+<section class="room-section" id="what-happens">
+  <div class="section-inner">
+    <div class="room-grid">
+      <div class="reveal">
+        <span class="section-label">The Method</span>
+        <h2 class="section-title" style="color: var(--navy);">This is not a <em>lecture.</em></h2>
+        <p class="room-body">
+          Our workshops are modeled on the most effective experiential formats in the world — including Landmark Education and the Human Awareness Institute — with one key adaptation: <strong>70–75% of every workshop is structured participation</strong>, not presentation. People are talking to each other, working in pairs and small groups, and discovering things about themselves in real time.
+        </p>
+        <p class="room-body">
+          We spend years repeating patterns because insight alone doesn't change them. The pattern lives in the body, in the nervous system, in the relational template. Our work gets underneath the story and touches it where it actually lives.
+        </p>
+        <p class="room-body">
+          <strong>Most groups are fully engaged within the first 10 minutes.</strong> By the end of two hours, people are usually saying things out loud they have never said in ordinary conversation — and feeling lighter for it.
+        </p>
+      </div>
+      <div class="differentiators reveal">
+        <div class="diff-card">
+          <div class="diff-number">What We Bring — 01</div>
+          <div class="diff-title">The Soul View Framework</div>
+          <div class="diff-desc">A soul-level reframing of why suffering repeats — not as failure, but as unfinished business seeking completion. This shift in perspective is often the first thing participants say changed everything for them.</div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-number">What We Bring — 02</div>
+          <div class="diff-title">The "Of Course" Acknowledgment</div>
+          <div class="diff-desc">Shame dissolves when a pattern is named with precise normalization. The moment someone hears "of course you do that — here's exactly why" is often when the holding finally releases. We do this live, in the room, with real people.</div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-number">What We Bring — 03</div>
+          <div class="diff-title">Physical Presence (Context-Dependent)</div>
+          <div class="diff-desc">Where appropriate and confirmed with hosts in advance, the work includes eye gazing, structured touch, and held presence. These modalities reach places that words alone cannot. Always modular and adapted to the venue and population.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKSHOP ARC -->
+<section class="arc-section" id="arc">
+  <div class="section-inner">
+    <span class="section-label">What Happens, Step by Step</span>
+    <h2 class="section-title">The workshop <em>arc</em></h2>
+    <p class="arc-intro reveal">
+      Every workshop follows a six-section structure that moves participants from awareness into felt shift. This is the arc of a standard two-hour introductory workshop. Longer formats expand each phase with additional depth, dyads, and integration time.
+    </p>
+    <div class="arc-steps reveal">
+      <div class="arc-step">
+        <span class="arc-step-num">01</span>
+        <div class="arc-step-title">Open the Field</div>
+        <div class="arc-step-desc">Create safety, presence, and the soul-level invitation. Participants arrive in their heads. This section brings them into the room — and into their bodies.</div>
+      </div>
+      <div class="arc-step">
+        <span class="arc-step-num">02</span>
+        <div class="arc-step-title">Name the Pattern</div>
+        <div class="arc-step-desc">Introduce the core framework: why the pattern repeats, across which four domains (body, mind, emotions, relationships), and why insight alone hasn't been enough.</div>
+      </div>
+      <div class="arc-step">
+        <span class="arc-step-num">03</span>
+        <div class="arc-step-title">Full Acknowledgment</div>
+        <div class="arc-step-desc">Before anything moves, it gets witnessed. Structured dyads. Participants say what has actually been happening — possibly for the first time. The room shifts.</div>
+      </div>
+      <div class="arc-step">
+        <span class="arc-step-num">04</span>
+        <div class="arc-step-title">Somatic & Emotional Entry</div>
+        <div class="arc-step-desc">Guided breathwork, body awareness, and targeted emotional exercises bring the pattern out of the head and into the body — where the actual change happens.</div>
+      </div>
+      <div class="arc-step">
+        <span class="arc-step-num">05</span>
+        <div class="arc-step-title">The Ancestral Thread</div>
+        <div class="arc-step-desc">Surface the generational dimension. Most of what we carry isn't originally ours. This section opens participants to the possibility of returning what they've been holding.</div>
+      </div>
+      <div class="arc-step">
+        <span class="arc-step-num">06</span>
+        <div class="arc-step-title">Declaration & Integration</div>
+        <div class="arc-step-desc">From a clear, embodied place — not just a hopeful thought — participants declare something new. Sealed in the body, witnessed by the group. This is how change installs.</div>
+      </div>
+    </div>
+    <div class="arc-note reveal">
+      <p class="arc-note-text"><strong>Note for venue hosts:</strong> Physical contact elements (eye gazing, holding, structured touch) are modular and are confirmed with each host in advance. All such elements are optional for participants and are not used in prison, correctional, or other institutional settings where they are not appropriate.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NAMED WORKSHOPS -->
+<section class="workshops-section" id="workshops">
+  <div class="section-inner">
+    <span class="section-label">Workshop Offerings</span>
+    <h2 class="section-title">What we <em>bring</em></h2>
+    <p class="workshops-intro reveal">
+      Each workshop is a standalone experience with its own throughline — and can also be offered as part of a multi-day residency. All workshops include our core three-differentiator method. Formats are adapted for the population, venue, and context.
+    </p>
+
+    <div class="workshop-cards">
+
+      <!-- Workshop 1 -->
+      <div class="workshop-card reveal">
+        <div class="workshop-card-sidebar">
+          <div>
+            <div class="workshop-card-tag">Introductory</div>
+            <div class="workshop-card-duration">2 Hours</div>
+            <div class="workshop-card-group">10–80 participants</div>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:rgba(246,241,231,0.4);">Best for</div>
+            <div style="font-size:0.86rem; font-weight:300; color:rgba(246,241,231,0.65); margin-top:0.3rem; line-height:1.5;">First-time groups, community events, retreat weekend openers</div>
+          </div>
+        </div>
+        <div class="workshop-card-body">
+          <div class="workshop-card-title">Why This Keeps Happening</div>
+          <div class="workshop-card-subtitle">Introductory Experiential Workshop</div>
+          <p class="workshop-card-desc">
+            You've tried to change. It keeps repeating. This workshop names exactly why — and then does something most workshops don't: it gets underneath it. In two hours, participants move from explanation to felt experience. They leave with a new understanding of their pattern, a first taste of what release feels like, and a clear next step.
+          </p>
+          <ul class="workshop-outcomes">
+            <li>Understand the four domains where patterns live</li>
+            <li>Experience a structured dyad for the first time</li>
+            <li>Feel the relief of full acknowledgment</li>
+            <li>Name their primary repeating pattern</li>
+            <li>Make a first embodied declaration</li>
+            <li>Leave with a clear, concrete next step</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Workshop 2 -->
+      <div class="workshop-card reveal">
+        <div class="workshop-card-sidebar">
+          <div>
+            <div class="workshop-card-tag">Deep Dive</div>
+            <div class="workshop-card-duration">Half Day<br><span style="font-size:1rem; opacity:0.6;">4 Hours</span></div>
+            <div class="workshop-card-group">10–50 participants</div>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:rgba(246,241,231,0.4);">Best for</div>
+            <div style="font-size:0.86rem; font-weight:300; color:rgba(246,241,231,0.65); margin-top:0.3rem; line-height:1.5;">Retreat centers, spiritual communities, recovery settings</div>
+          </div>
+        </div>
+        <div class="workshop-card-body">
+          <div class="workshop-card-title">The Body Knows What the Mind Can't Say</div>
+          <div class="workshop-card-subtitle">Somatic & Relational Deep Dive</div>
+          <p class="workshop-card-desc">
+            When you understand the pattern but still live inside it, the body is usually where it hides. This half-day workshop goes deeper into the somatic and relational dimensions of trauma — using breathwork, body awareness, and structured triads to surface what talk alone can't reach. Participants leave with specific body-level tools they can use daily.
+          </p>
+          <ul class="workshop-outcomes">
+            <li>Map where trauma lives in their body</li>
+            <li>Experience guided breathwork and body scan</li>
+            <li>Practice the polarity integration technique</li>
+            <li>Work in triads to witness and be witnessed</li>
+            <li>Release a specific held pattern somatically</li>
+            <li>Build a simple daily body practice</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Workshop 3 -->
+      <div class="workshop-card reveal">
+        <div class="workshop-card-sidebar">
+          <div>
+            <div class="workshop-card-tag">Full Immersion</div>
+            <div class="workshop-card-duration">Full Day<br><span style="font-size:1rem; opacity:0.6;">7–8 Hours</span></div>
+            <div class="workshop-card-group">10–40 participants</div>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:rgba(246,241,231,0.4);">Best for</div>
+            <div style="font-size:0.86rem; font-weight:300; color:rgba(246,241,231,0.65); margin-top:0.3rem; line-height:1.5;">Residential retreats, intentional communities, transformation programs</div>
+          </div>
+        </div>
+        <div class="workshop-card-body">
+          <div class="workshop-card-title">From Surviving to Sovereign</div>
+          <div class="workshop-card-subtitle">The Complete Transformation Arc — Full-Day Intensive</div>
+          <p class="workshop-card-desc">
+            One day, the full arc. This intensive moves through all six workshop phases in depth — from naming the pattern to somatic release, ancestral return, and embodied declaration. Participants experience every tool in the method. They leave having done the most concentrated inner work many of them have ever attempted in a group setting.
+          </p>
+          <ul class="workshop-outcomes">
+            <li>Complete the full six-phase workshop arc</li>
+            <li>Engage the ancestral dimension of their pattern</li>
+            <li>Practice returning inherited burdens with love</li>
+            <li>Experience soul-level reframing of suffering</li>
+            <li>Make a full, embodied declaration before witnesses</li>
+            <li>Leave with a concrete integration practice</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Workshop 4 -->
+      <div class="workshop-card reveal">
+        <div class="workshop-card-sidebar">
+          <div>
+            <div class="workshop-card-tag">Residency</div>
+            <div class="workshop-card-duration">2–5 Days</div>
+            <div class="workshop-card-group">10–35 participants</div>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <div style="font-size:0.72rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:rgba(246,241,231,0.4);">Best for</div>
+            <div style="font-size:0.86rem; font-weight:300; color:rgba(246,241,231,0.65); margin-top:0.3rem; line-height:1.5;">Retreat centers (Esalen model), residential programs, multi-day community events</div>
+          </div>
+        </div>
+        <div class="workshop-card-body">
+          <div class="workshop-card-title">Why This Keeps Happening</div>
+          <div class="workshop-card-subtitle">Multi-Day Immersive Residency</div>
+          <p class="workshop-card-desc">
+            The deepest container we offer. Over two to five days, participants move through the full arc of transformation — not once, but in deepening spirals. Each day builds on the last. Mornings open the body. Afternoons do the relational and ancestral work. Evenings integrate. What typically takes months of weekly sessions can happen here in days, because the container holds it continuously.
+          </p>
+          <ul class="workshop-outcomes">
+            <li>Complete multiple passes through the full arc</li>
+            <li>Extended constellation and ancestral work</li>
+            <li>Deep somatic and breathwork sessions</li>
+            <li>Immersive dyad and triad practice</li>
+            <li>Evening integration and embodiment rituals</li>
+            <li>Departing with a personal transformation roadmap</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POPULATIONS -->
+<section class="populations-section" id="populations">
+  <div class="section-inner">
+    <span class="section-label">Who We Work With</span>
+    <h2 class="section-title" style="color: var(--navy);">We go where the <em>need is.</em></h2>
+    <p class="populations-intro reveal">
+      Our workshops are designed to be adapted to the community receiving them. We have facilitated in retreat centers, intentional communities, spiritual settings, recovery environments, and have pursued access to correctional and Native communities. The method adapts; the depth doesn't.
+    </p>
+    <div class="populations-grid">
+      <div class="population-card reveal">
+        <span class="population-icon">🌿</span>
+        <div class="population-title">Retreat Centers</div>
+        <p class="population-note">Esalen-style residential programs, wellness retreats, and transformation centers. Full physical contact modality available. Ideal for multi-day residencies.</p>
+      </div>
+      <div class="population-card reveal">
+        <span class="population-icon">🕊️</span>
+        <div class="population-title">Spiritual Communities</div>
+        <p class="population-note">Intentional communities, contemplative centers, faith communities exploring healing. Easily integrated with existing spiritual frameworks and practices.</p>
+      </div>
+      <div class="population-card reveal">
+        <span class="population-icon">♻️</span>
+        <div class="population-title">Recovery Programs</div>
+        <p class="population-note">In- and outpatient recovery centers, sober living communities, 12-step adjacent programs. Somatic and relational focus complements existing therapeutic approaches.</p>
+      </div>
+      <div class="population-card reveal">
+        <span class="population-icon">🏛️</span>
+        <div class="population-title">Correctional Facilities</div>
+        <p class="population-note">Prison and jail programs. Non-contact format used. Sponsorship typically required. Pattern recognition, acknowledgment, and declaration are particularly powerful in this context.</p>
+      </div>
+      <div class="population-card reveal">
+        <span class="population-icon">🌄</span>
+        <div class="population-title">Native & Reservation Communities</div>
+        <p class="population-note">Tribal communities and Native cultural organizations. Sponsorship-funded. Ancestral and generational healing framework resonates deeply with indigenous healing traditions.</p>
+      </div>
+      <div class="population-card reveal">
+        <span class="population-icon">💼</span>
+        <div class="population-title">Corporate & Organizational</div>
+        <p class="population-note">Leadership teams, organizational culture work, employee wellness. Pattern recognition and relational communication tools translate directly to professional environments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITATOR BIOS -->
+<section class="bio-section" id="facilitators">
+  <div class="section-inner">
+    <span class="section-label">The Facilitators</span>
+    <h2 class="section-title">Mark & <em>Lynetta</em></h2>
+    <div class="bio-grid reveal">
+      <div class="bio-card">
+        <img src="about.jpg" alt="Mark Siedler" class="bio-photo">
+        <div class="bio-content">
+          <div class="bio-name">Mark Siedler</div>
+          <div class="bio-role">Workshop Leader & Facilitator</div>
+          <p class="bio-text">Mark brings a rare combination: the structured rigor of transformational technology (trained in the Landmark Education model) and the embodied depth of somatic and soul-level healing. He has spent decades understanding why patterns repeat and developing the tools to interrupt them at the level where they actually live — in the body and the nervous system.</p>
+          <p class="bio-text">His facilitation is marked by precision, warmth, and the specific ability to name what a room is holding before participants can articulate it themselves. He has facilitated in intentional communities, recovery settings, spiritual organizations, and with individuals across a wide spectrum of backgrounds and life circumstances.</p>
+          <p class="bio-text">He travels full-time with Lynetta and brings this work directly to communities — not waiting for people to come to them.</p>
+        </div>
+      </div>
+      <div class="bio-card">
+        <img src="about.jpg" alt="Lynetta Avery" class="bio-photo" style="object-position: right top;">
+        <div class="bio-content">
+          <div class="bio-name">Lynetta Avery</div>
+          <div class="bio-role">Workshop Leader & Somatic Facilitator</div>
+          <p class="bio-text">Lynetta's facilitation is grounded in the body. Her background in somatic bodywork — including abdominal and visceral release work — gives her the ability to hold space at the level where trauma is actually stored: in the fascia, in the gut, in the held places the mind cannot reach by thinking its way through them.</p>
+          <p class="bio-text">She is also a practitioner of family constellation work, working with the ancestral and generational dimensions of trauma that most therapeutic approaches don't address. In a workshop room, she creates the quality of presence that makes it safe for people to feel what they've been avoiding — and then move through it.</p>
+          <p class="bio-text">Her work with the Family Field framework, and her direct lived experience of ancestral healing, gives her unusual depth in the intergenerational dimensions of the work.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 2rem; max-width: 760px;" class="reveal">
+      <div style="background: rgba(26,75,196,0.18); border: 1px solid rgba(26,75,196,0.3); padding: 2rem 2.2rem;">
+        <div style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem;">Why a Team</div>
+        <p style="font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: rgba(246,241,231,0.8);">These patterns don't stay in one lane. They live in the body, the mind, the emotions, and relationships simultaneously. Working as a married team — with Mark's precision in the structural and cognitive work, and Lynetta's depth in the somatic and relational — means participants get both dimensions held in the same room at the same time. This is uncommon. It matters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKSHOP TESTIMONIALS -->
+<section class="workshop-proof-section" id="proof">
+  <div class="section-inner" style="text-align: center;">
+    <span class="section-label">From Participants</span>
+    <h2 class="section-title reveal" style="color: var(--navy);">What people say <em>after the room.</em></h2>
+    <div class="workshop-testimonials reveal">
+      <div class="wt-card wide">
+        <img src="testimonial - brianna.jpg" alt="Brianna Anderson" class="wt-card-img">
+        <div class="wt-card-inner">
+          <p class="wt-quote" style="font-size:1.15rem;">"I went so deep with my personal growth work with Mark and Lynetta. So deep that I became a lighthouse and even 'graduated' early due to finally finding my soulmate at age 36. I have so much gratitude for the support and guidance. Their work is literally life-transformational!"</p>
+          <div class="wt-attribution" style="margin-top:1.2rem;">— Brianna Anderson</div>
+        </div>
+      </div>
+      <div class="wt-card">
+        <img src="testimonial - sam and glenn.jpg" alt="Sam and Glenn" style="width:100%; height:180px; object-fit:cover; object-position:center 65%; display:block; margin-bottom:1rem;">
+        <p class="wt-quote">"We finally get each other — no more fighting!"</p>
+        <div class="wt-attribution">— Sam & Glenn</div>
+      </div>
+      <div class="wt-card">
+        <img src="testimonial - tony and tiffany.jpg" alt="Tony and Tiffany" style="width:100%; height:180px; object-fit:cover; object-position:center 40%; display:block; margin-bottom:1rem;">
+        <p class="wt-quote">"Tony finally gets me — I just said YES!"</p>
+        <div class="wt-attribution">— Tony & Tiffany</div>
+      </div>
+      <div class="wt-card" style="border-left-color: var(--royal);">
+        <p class="wt-quote" style="font-size:1.05rem;">"Most groups are fully engaged within the first 10 minutes. By the end of two hours, people are usually saying things out loud they have never been able to say in ordinary conversation."</p>
+        <div class="wt-attribution">— Workshop observation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE WORKSHOP VIDEOS -->
+<section class="videos-section" id="videos">
+  <div class="section-inner">
+    <span class="section-label">See Us in the Room</span>
+    <h2 class="section-title">Live workshop <em>footage</em></h2>
+    <p class="videos-intro reveal">
+      These recordings let hosts and venue directors see exactly what the work looks like when it's happening live — the format, the room dynamic, the level of engagement.
+    </p>
+    <div class="video-grid reveal">
+      <a href="https://www.youtube.com/watch?v=2NiRNP-Pmbs" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/2NiRNP-Pmbs/hqdefault.jpg" alt="One Love Workshop">
+        <div class="video-card-meta">
+          <div class="video-card-venue">Intentional Community — Jamestown, CA</div>
+          <div class="video-card-title">One Love Workshop</div>
+          <div class="video-card-link">Watch on YouTube →</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=wU_f-onF7xk" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/wU_f-onF7xk/hqdefault.jpg" alt="Full Spectrum Victim Recovery">
+        <div class="video-card-meta">
+          <div class="video-card-venue">St. Paul's Free University</div>
+          <div class="video-card-title">Full Spectrum Victim Recovery</div>
+          <div class="video-card-link">Watch on YouTube →</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=PCh3r4NfIO8" target="_blank" class="video-card">
+        <img src="https://img.youtube.com/vi/PCh3r4NfIO8/hqdefault.jpg" alt="Religious Recovery Panel">
+        <div class="video-card-meta">
+          <div class="video-card-venue">St. Paul's Free University</div>
+          <div class="video-card-title">Religious Recovery Panel</div>
+          <div class="video-card-link">Watch on YouTube →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LOGISTICS / HOSTING -->
+<section class="logistics-section" id="host">
+  <div class="section-inner">
+    <span class="section-label">Host a Workshop</span>
+    <h2 class="section-title" style="color: var(--navy);">Practical details for <em>venue hosts.</em></h2>
+    <div class="logistics-grid">
+      <div class="reveal">
+        <p class="logistics-body">
+          If you run a retreat center, spiritual community, recovery program, or intentional community, here is how working with us actually looks. <strong>We come to you</strong> — we travel by RV and are self-contained. We handle our own logistics. You provide a space and your people.
+        </p>
+        <p class="logistics-body">
+          We believe this work should reach communities that need it — not just communities that can afford premium rates. <strong>We work with each host individually on compensation,</strong> and for underserved communities we actively seek sponsorship partners to make our presence possible.
+        </p>
+        <ul class="logistics-list">
+          <li><strong>Space requirements</strong> — a room large enough for participants to move and pair up. Chairs. Floor space is a bonus. We bring our own facilitation materials.</li>
+          <li><strong>Group size</strong> — 10 to 80 participants for introductory workshops; 10 to 40 for immersives and full-day formats; 10 to 35 for multi-day residencies.</li>
+          <li><strong>RV accommodations</strong> — hookups welcomed and appreciated, but not required. We are genuinely self-contained.</li>
+          <li><strong>Physical contact</strong> — confirm with us in advance. We discuss the population, the setting, and the appropriate format for your specific context. Always modular and optional for participants.</li>
+          <li><strong>Compensation</strong> — we discuss this in the first conversation. We are committed to making this accessible and will find a structure that works.</li>
+          <li><strong>Underserved communities</strong> — prisons, reservations, underfunded recovery settings: we pursue sponsorship so we can say yes where there is real need and no workable budget. See our sponsor page.</li>
+        </ul>
+        <a href="mailto:whydoesthiskeepshappening@gmail.com?subject=Workshop%20Hosting%20Inquiry%20-%20Why%20This%20Keeps%20Happening&body=Name:%20%20%0D%0A%0D%0AOrganization%20or%20Venue:%20%20%0D%0A%0D%0ALocation:%20%20%0D%0A%0D%0AType%20of%20Community%20(e.g.%20retreat%20center%2C%20recovery%2C%20spiritual%2C%20other):%20%20%0D%0A%0D%0AEstimated%20Group%20Size:%20%20%0D%0A%0D%0APreferred%20Workshop%20Format%20(2hr%2C%20half-day%2C%20full-day%2C%20multi-day%20residency):%20%20%0D%0A%0D%0APreferred%20Timeline%20or%20Season:%20%20%0D%0A%0D%0AAnything%20else%20we%20should%20know:%20%20%0D%0A%0D%0A" class="btn-primary">Send a Hosting Inquiry</a>
+        <p style="font-size:0.88rem; font-weight:300; font-style:italic; color:var(--text-light); margin-top:1rem;">We read every inquiry ourselves. The first step is a short conversation — no forms, no funnels.</p>
+      </div>
+      <div class="reveal">
+        <div class="availability-box">
+          <div class="availability-title">Availability — 2026</div>
+          <div class="avail-item"><strong>Now through May 2026</strong> — Available in and around Phoenix, AZ</div>
+          <div class="avail-item"><strong>June 2026</strong> — Moving into California. Available throughout the state.</div>
+          <div class="avail-item"><strong>July–October 2026</strong> — Oregon and the Pacific Northwest. Esalen and Big Sur region included in California travel.</div>
+          <div class="avail-item"><strong>Ongoing</strong> — We are full-time travelers. If your venue is on the route — or worth a detour — reach out.</div>
+          <div class="avail-item" style="margin-top:1.2rem; padding-top:1.2rem; border-top:1px solid rgba(246,241,231,0.12);"><strong>Planning ahead?</strong> We are building our fall 2026 calendar now. The earlier we connect, the better the scheduling.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <span class="section-label" style="display:block; margin-bottom:1.2rem;">Next Step</span>
+    <h2 class="section-title reveal">Ready to bring this <em>to your community?</em></h2>
+    <p class="cta-body reveal">
+      The first conversation is short, direct, and without pressure. We want to understand your group, your goals, and whether the format fits. If it does, we'll build something worth doing.
+    </p>
+    <div class="cta-btn-group reveal">
+      <a href="mailto:whydoesthiskeepshappening@gmail.com?subject=Workshop%20Hosting%20Inquiry%20-%20Why%20This%20Keeps%20Happening&body=Name:%20%20%0D%0A%0D%0AOrganization%20or%20Venue:%20%20%0D%0A%0D%0ALocation:%20%20%0D%0A%0D%0AType%20of%20Community%20(e.g.%20retreat%20center%2C%20recovery%2C%20spiritual%2C%20other):%20%20%0D%0A%0D%0AEstimated%20Group%20Size:%20%20%0D%0A%0D%0APreferred%20Workshop%20Format%20(2hr%2C%20half-day%2C%20full-day%2C%20multi-day%20residency):%20%20%0D%0A%0D%0APreferred%20Timeline%20or%20Season:%20%20%0D%0A%0D%0AAnything%20else%20we%20should%20know:%20%20%0D%0A%0D%0A" class="btn-primary">Send a Hosting Inquiry</a>
+      <a href="index.html#sponsor" class="btn-secondary">Sponsor a Workshop</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="https://mom.whythiskeepshappening.com">I Want My Mommy</a>
+    <a href="https://whythiskeepshappening.substack.com">Podcast & Newsletter</a>
+    <a href="https://chat.whythiskeepshappening.com">Free Coaching Chat</a>
+    <a href="mailto:whydoesthiskeepshappening@gmail.com">Contact</a>
+  </div>
+  <div>© 2026 Why This Keeps Happening — Mark Siedler & Lynetta Avery. All rights reserved.</div>
+</footer>
+
+<script>
+// Reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Mobile nav
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+const mobileNavClose = document.getElementById('mobileNavClose');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.add('open');
+  hamburger.classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+
+mobileNavClose.addEventListener('click', () => {
+  mobileNav.classList.remove('open');
+  hamburger.classList.remove('open');
+  document.body.style.overflow = '';
+});
+
+mobileNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+</script>
+
+</body>
+</html>
