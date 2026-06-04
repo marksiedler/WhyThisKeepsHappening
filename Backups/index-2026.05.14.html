@@ -1663,6 +1663,130 @@
   }
 
 
+  /* ── TRAVEL / ON THE ROAD SECTION ── */
+  .travel-section {
+    background: var(--cream);
+    padding: 5rem 3rem;
+  }
+
+  .travel-section .section-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .travel-section .section-label { color: var(--gold); }
+  .travel-section .section-title { color: var(--navy); }
+
+  .travel-intro {
+    font-size: 1.05rem;
+    color: var(--text-mid);
+    max-width: 680px;
+    margin-bottom: 3rem;
+    line-height: 1.75;
+  }
+
+  .travel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .travel-card {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid rgba(11,22,64,0.10);
+    padding: 1.6rem 1.8rem;
+    box-shadow: 0 2px 12px rgba(11,22,64,0.06);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .travel-card:hover {
+    box-shadow: 0 6px 24px rgba(11,22,64,0.12);
+    transform: translateY(-2px);
+  }
+
+  .travel-card-dates {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+
+  .travel-card-region {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .travel-card-areas {
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  .travel-card-areas span {
+    display: inline-block;
+    background: var(--cream-dark);
+    border-radius: 20px;
+    padding: 0.2rem 0.7rem;
+    margin: 0.15rem 0.15rem 0.15rem 0;
+    font-size: 0.82rem;
+    color: var(--text-mid);
+  }
+
+  .travel-card .btn-book {
+    display: inline-block;
+    background: var(--royal);
+    color: var(--white);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.55rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+
+  .travel-card .btn-book:hover { background: var(--royal-light); }
+
+  .travel-card.private-stay {
+    border-style: dashed;
+    background: var(--cream);
+  }
+
+  .travel-card.private-stay .travel-card-region { color: var(--text-mid); }
+
+  .travel-more-note {
+    text-align: center;
+    font-size: 0.92rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 1rem;
+  }
+
+  .travel-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .travel-cta-note {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+  }
+
+  @media (max-width: 600px) {
+    .travel-grid { grid-template-columns: 1fr; }
+    .travel-section { padding: 3.5rem 1.5rem; }
+  }
 
 </style>
 </head>
@@ -1678,6 +1802,7 @@
     <li><a href="#coaching">Coaching</a></li>
     <li><a href="#start">Ways to Begin</a></li>
     <li><a href="workshops.html">Workshops</a></li>
+    <li><a href="#travel">On the Road</a></li>
     <li><a href="#sponsor">Sponsors</a></li>
     <li><a href="#connect">Connect</a></li>
   </ul>
@@ -2247,6 +2372,84 @@ function resetQuickEval() {
 </section>
 
 
+<!-- TRAVEL / ON THE ROAD SECTION -->
+<section class="travel-section" id="travel">
+  <div class="section-inner">
+
+    <div class="reveal">
+      <span class="section-label">On the Road</span>
+      <h2 class="section-title">Meet us where <em>you</em> are</h2>
+      <p class="travel-intro">
+        We live and travel in our RV, bringing hugs, coaching, and workshops directly to communities across the country.
+        Each stop is our base — from there we travel out to surrounding towns to offer free hugs, private sessions, and group workshops.
+        Check where we'll be and book a time while we're near you.
+      </p>
+    </div>
+
+    <div class="travel-grid reveal">
+
+      <!-- Stop 1: Morgan Hill -->
+      <div class="travel-card">
+        <div class="travel-card-dates">Apr 22 – May 20, 2026</div>
+        <div class="travel-card-region">Morgan Hill / Silicon Valley, CA</div>
+        <div class="travel-card-areas">
+          <span>San Jose</span><span>Silicon Valley</span><span>Santa Cruz</span><span>Gilroy</span><span>Salinas</span>
+        </div>
+        <a href="https://chat.whythiskeepshappening.com" class="btn-book">Book a Session →</a>
+      </div>
+
+      <!-- Stop 2: Mariposa (private) -->
+      <div class="travel-card private-stay">
+        <div class="travel-card-dates">May 22 – May 25, 2026</div>
+        <div class="travel-card-region">Mariposa / Yosemite Gateway, CA</div>
+        <div class="travel-card-areas">
+          <span>Mariposa</span><span>Oakhurst</span><span>Merced</span>
+        </div>
+        <a href="https://chat.whythiskeepshappening.com" class="btn-book">Book a Session →</a>
+      </div>
+
+      <!-- Stop 3: Lake of the Springs -->
+      <div class="travel-card">
+        <div class="travel-card-dates">May 27 – Jun 15, 2026</div>
+        <div class="travel-card-region">Nevada County / Lake of the Springs, CA</div>
+        <div class="travel-card-areas">
+          <span>Marysville</span><span>Grass Valley</span><span>Nevada City</span><span>Yuba City</span>
+        </div>
+        <a href="https://chat.whythiskeepshappening.com" class="btn-book">Book a Session →</a>
+      </div>
+
+      <!-- Stop 4: Snowflower -->
+      <div class="travel-card">
+        <div class="travel-card-dates">Jun 17 – Jul 6, 2026</div>
+        <div class="travel-card-region">Sierra Foothills, CA</div>
+        <div class="travel-card-areas">
+          <span>Auburn</span><span>Grass Valley</span><span>Truckee</span><span>Sacramento Foothills</span>
+        </div>
+        <a href="https://chat.whythiskeepshappening.com" class="btn-book">Book a Session →</a>
+      </div>
+
+      <!-- Stop 5: Tahoe Valley -->
+      <div class="travel-card">
+        <div class="travel-card-dates">Jul 8 – Jul 28, 2026</div>
+        <div class="travel-card-region">Lake Tahoe, CA / NV</div>
+        <div class="travel-card-areas">
+          <span>South Lake Tahoe</span><span>Truckee</span><span>Carson City</span><span>Reno</span>
+        </div>
+        <a href="https://chat.whythiskeepshappening.com" class="btn-book">Book a Session →</a>
+      </div>
+
+    </div>
+
+    <p class="travel-more-note reveal">More stops coming — route continues beyond July. Check back or <a href="/cdn-cgi/l/email-protection#fb8c93829f949e888f939288909e9e8b88939a8b8b9e9592959cbb9c969a9297d5989496c4888e99919e988fc6b2958d928f9edec9cbae88dec9cb8f94dec9cbb48e89dec9cbba899e9a" style="color: var(--gold);">invite us to your area</a>.</p>
+
+    <div class="travel-cta-row reveal">
+      <a href="https://chat.whythiskeepshappening.com" class="btn btn-primary">Book a Session Near You</a>
+      <span class="travel-cta-note">We offer free hugs, private coaching sessions, and group workshops.</span>
+    </div>
+
+  </div>
+</section>
+
 <!-- HOST SECTION -->
 <section class="host-section" id="host">
   <div class="section-inner">
@@ -2270,10 +2473,19 @@ function resetQuickEval() {
           <li>Weekend Residency — Immersive Multi-Day Experience</li>
           <li>Private Coaching alongside any workshop format</li>
         </ul>
-        <a href="mailto:whydoesthiskeepshappening@gmail.com?subject=Workshop%20Inquiry" class="btn-primary">Ask About a Workshop</a>
+        <a href="/cdn-cgi/l/email-protection#186f70617c777d6b6c70716b737d7d686b707968687d7671767f587f75797174367b7775276b6d7a727d7b6c254f776a736b7077683d2a2850776b6c71767f3d2a285176696d716a613d2a28353d2a284f70613d2a284c70716b3d2a28537d7d686b3d2a28507968687d7671767f3e7a777c61255679757d223d2a283d2a283d285c3d28593d285c3d2859576a7f79767162796c717776223d2a283d2a283d285c3d28593d285c3d285954777b796c717776223d2a283d2a283d285c3d28593d285c3d28594c61687d3d2a28777e3d2a285f6a776d683d2a28307d367f363d2a286a7d7b776e7d6a613d2a5b3d2a286a7d6c6a7d796c3d2a5b3d2a286b68716a716c6d79743d2a287b7775756d76716c6131223d2a283d2a283d285c3d28593d285c3d28595d6b6c7175796c7d7c3d2a285f6a776d683d2a284b71627d223d2a283d2a283d285c3d28593d285c3d2859486a7d7e7d6a6a7d7c3d2a285e776a75796c3d2a28302a706a3d2a5b3d2a287079747e357c79613d2a5b3d2a287e6d7474357c79613d2a5b3d2a286a7d6b717c7d767b6131223d2a283d2a283d285c3d28593d285c3d28594c71757d7471767d223d2a283d2a283d285c3d28593d285c3d28595976616c7071767f3d2a287d746b7d3d2a286f7d3d2a286b70776d747c3d2a287376776f223d2a283d2a283d285c3d28593d285c3d2859" class="btn-primary">Ask About a Workshop</a>
         <p class="host-body" style="margin-top: 1.5rem; font-style: italic; font-size: 0.9rem;">We read every inquiry ourselves. The first step is a short conversation to understand your group, your goals, and the format that fits best.</p>
       </div>
-
+      <div class="reveal">
+        <div class="host-logistics">
+          <div class="logistics-title">Availability & Logistics</div>
+          <div class="logistics-item"><strong>Now through May 2026</strong> — Available in Phoenix, AZ and surrounding region</div>
+          <div class="logistics-item"><strong>June 2026 onward</strong> — Traveling through California, Oregon, and the Pacific Northwest</div>
+          <div class="logistics-item"><strong>RV Travel</strong> — We are self-contained and can come to you. RV hookups welcomed but not required.</div>
+          <div class="logistics-item"><strong>Compensation</strong> — We work with each host individually. We believe in making this work accessible. Let's talk.</div>
+          <div class="logistics-item"><strong>Underserved Communities</strong> — For prisons, reservations, and communities without resources, we seek sponsorship partners to make our presence possible. See below.</div>
+        </div>
+      </div>
     </div>
 
     <div style="margin-top:4rem;">
@@ -2339,7 +2551,7 @@ function resetQuickEval() {
           <li>Support travel costs that allow us to reach remote communities</li>
           <li>Invest in the broader mission of making trauma healing accessible to all</li>
         </ul>
-        <a href="mailto:whydoesthiskeepshappening@gmail.com?subject=Sponsorship%20Inquiry" class="btn-primary">Talk About Sponsorship</a>
+        <a href="/cdn-cgi/l/email-protection#bfc8d7c6dbd0dacccbd7d6ccd4dadacfccd7decfcfdad1d6d1d8ffd8d2ded6d391dcd0d280cccaddd5dadccb82eccfd0d1ccd0cdccd7d6cf9a8d8ff6d1cecad6cdc69a8d8f929a8d8fe8d7c69a8d8febd7d6cc9a8d8ff4dadacfcc9a8d8ff7decfcfdad1d6d1d899ddd0dbc682f1ded2da859a8d8f9a8d8f9a8ffb9a8ffe9a8ffb9a8ffef0cdd8ded1d6c5decbd6d0d19a8d8fd0cd9a8d8ff9d0cad1dbdecbd6d0d1859a8d8f9a8d8f9a8ffb9a8ffe9a8ffb9a8ffef7d0c89a8d8fdbd6db9a8d8fc6d0ca9a8d8fd7dadecd9a8d8fdeddd0cacb9a8d8fcacc859a8d8f9a8d8f9a8ffb9a8ffe9a8ffb9a8ffee8d7decb9a8d8fdbcddec8cc9a8d8fc6d0ca9a8d8fcbd09a8d8fcbd7d6cc9a8d8fd2d6ccccd6d0d1859a8d8f9a8d8f9a8ffb9a8ffe9a8ffb9a8ffeeecadacccbd6d0d1cc9a8d8fd9d0cd9a8d8fcacc9a8dfc9a8d8fd0cd9a8d8fded1c6cbd7d6d1d89a8d8fdad3ccda859a8d8f9a8d8f9a8ffb9a8ffe9a8ffb9a8ffe" class="btn-primary">Talk About Sponsorship</a>
       </div>
       <div class="reveal">
         <div class="sponsor-quote">
@@ -2361,7 +2573,7 @@ function resetQuickEval() {
     </p>
     <div class="btn-group" style="justify-content:center; margin-top:2rem;">
       <a href="https://chat.whythiskeepshappening.com" class="btn-primary">Book a Free Coaching Chat</a>
-      <a href="mailto:whydoesthiskeepshappening@gmail.com" class="btn-primary">Send Us a Message</a>
+      <a href="/cdn-cgi/l/email-protection#bacdd2c3ded5dfc9ced2d3c9d1dfdfcac9d2dbcacadfd4d3d4ddfaddd7dbd3d694d9d5d785c9cfd8d0dfd9ce87fddfd4dfc8dbd69f888af3d4cbcfd3c8c39f888a979f888aedd2c39f888aeed2d3c99f888af1dfdfcac99f888af2dbcacadfd4d3d4dd" class="btn-primary">Send Us a Message</a>
     </div>
 
     <div class="social-icons-wrap reveal">
@@ -2406,7 +2618,7 @@ function resetQuickEval() {
     <a href="https://estrangedkids.whythiskeepshappening.com">Estranged From Your Kids</a>
     <a href="https://whythiskeepshappening.substack.com">Podcast & Newsletter</a>
     <a href="https://chat.whythiskeepshappening.com">Free Coaching Chat</a>
-    <a href="mailto:whydoesthiskeepshappening@gmail.com">Contact</a>
+    <a href="/cdn-cgi/l/email-protection#87f0effee3e8e2f4f3efeef4ece2e2f7f4efe6f7f7e2e9eee9e0c7e0eae6eeeba9e4e8ea">Contact</a>
   </div>
   <div>&copy; 2026 Why This Keeps Happening &mdash; Mark Siedler &amp; Lynetta Avery. All rights reserved.</div>
 </footer>
